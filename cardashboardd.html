@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="statics/style.css">
+    <title>Car dashboard</title>
+</head>
+
+<body class="car-body">
+    <main>
+        <!--speedometer
+    fuel gauge
+    tachometer
+    battery voltage gauge
+    odometer
+    oil pressure gauge
+    coolant temperature gauge
+    
+    -->
+        <div class="containerOfCar">
+            <div class="fuel"><img src="statics/Untitled-FUEL.png" alt=""></div>
+            <div class="speedometer"><img src="statics/Untitled-1.png" alt="">
+                <div class="handle-div"> <img src="statics/handle.png" alt="" class="handle-1"></div>
+            </div>
+            <div class="tachmeter"><img src="statics/Untitled-2.png" alt="">
+                <div class="handle2-div"><img src="statics/handle.png" alt="" class="handle2"></div>
+            </div>
+            <div class="temperature"><img src="statics/Untitled-temperature.png" alt=""></div>
+            <div class="direction"> <button class="arrow-left" id="leftArrow">←</button></div>
+
+            <div class="direction2"> <button class="arrow-right" id="rightArrow"> →</button></div>
+
+            <div class="road"><img src="statics/Screenshot (304).png" alt="">
+                <!---->
+                <p id="car">&#128663;</p>
+            </div>
+            <div class="options-online">
+
+
+                <button class="item-1-car" id="lte">LTE</button>
+                <button class="item-2-car" id="bluetooth">Bluetooth</button>
+                <button class="item-3-car" id="navigator">Navigator</button>
+                <button class="item-4-car" id="music">Music</button>
+
+            </div>
+        </div>
+    </main>
+    <script src="js/car.js">
+        /* car.onclick = function () {
+                let start = Date.now();
+    
+                let timer = setInterval(function () {
+                    let timePassed = Date.now() - start;
+    
+                    car.style.left = timePassed / 9 + 'px';
+    
+                    if (timePassed > 2000) clearInterval(timer);
+    
+                }, 20);
+            }
+            */
+        function calculateDutchFineForSpeedLimitViolation(currentSpeed, speedLimit, zoneNumber) {
+            if (zoneNumber == 1) {
+                if ((currentSpeed - speedLimit) <= 5) {
+                    return "Your Fine is 39 Euros.";
+                } else if ((currentSpeed - speedLimit) <= 10) {
+                    return "Your Fine is 82 Euros.";
+                } else if ((currentSpeed - speedLimit) <= 15) {
+                    return "Your Fine is 154 Euros.";
+                } else if ((currentSpeed - speedLimit) <= 20) {
+                    return "Your Fine is 219 Euros.";
+                } else if ((currentSpeed - speedLimit) <= 25) {
+                    return "Your Fine is 296 Euros.";
+                } else if ((currentSpeed - speedLimit) <= 30) {
+                    return "Your Fine is 383 Euros.";
+                } else if ((currentSpeed - speedLimit) > 30) {
+                    return "Your Fine is a penalty order.";
+                }
+
+                if (zoneNumber == 2) {
+                    if ((currentSpeed - speedLimit) <= 5) {
+                        return "Your Fine is 36 Euros.";
+                    } else if ((currentSpeed - speedLimit) <= 10) {
+                        return "Your Fine is 77 Euros.";
+                    } else if ((currentSpeed - speedLimit) <= 15) {
+                        return "Your Fine is 148 Euros.";
+                    } else if ((currentSpeed - speedLimit) <= 20) {
+                        return "Your Fine is 209 Euros.";
+                    } else if ((currentSpeed - speedLimit) <= 25) {
+                        return "Your Fine is 280 Euros.";
+                    } else if ((currentSpeed - speedLimit) <= 30) {
+                        return "Your Fine is 364 Euros.";
+                    } else if ((currentSpeed - speedLimit) > 30) {
+                        return "Your Fine is a penalty order.";
+                    }
+
+                    if (zoneNumber == 3) {
+                        if ((currentSpeed - speedLimit) <= 5) {
+                            return "Your Fine is 29 Euros.";
+                        } else if ((currentSpeed - speedLimit) <= 10) {
+                            return "Your Fine is 72 Euros.";
+                        } else if ((currentSpeed - speedLimit) <= 15) {
+                            return "Your Fine is 136 Euros.";
+                        } else if ((currentSpeed - speedLimit) <= 20) {
+                            return "Your Fine is 196 Euros.";
+                        } else if ((currentSpeed - speedLimit) <= 25) {
+                            return "Your Fine is 261 Euros.";
+                        } else if ((currentSpeed - speedLimit) <= 30) {
+                            return "Your Fine is 334 Euros.";
+                        } else if ((currentSpeed - speedLimit) > 30) {
+                            return "Your Fine is a penalty order.";
+                        }
+
+                    }
+
+
+    </script>
+</body>
+
+</html>

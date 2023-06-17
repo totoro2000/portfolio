@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .table {
+            width: 330px;
+            height: 330px;
+            border-radius: 100%;
+            background: burlywood;
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 200px;
+        }
+
+        li {
+            display: block;
+            position: absolute;
+            top: 51%;
+            left: 51%;
+            width: 100px;
+            height: 100px;
+            margin: -51px;
+            background: gray;
+            border-radius: 51%;
+            text-align: center;
+            line-height: 100px;
+            transform: rotate(var(--angle)) translate(250px) rotate(calc(-1 * var(--angle)));
+        }
+
+        .chair1 {
+            --angle: 0deg;
+        }
+
+        .chair2 {
+            --angle: 45deg;
+        }
+
+        .chair3 {
+            --angle: 90deg;
+        }
+
+        .chair4 {
+            --angle: 135deg;
+        }
+
+        .chair5 {
+            --angle: 180deg;
+        }
+
+        .chair6 {
+            --angle: 225deg;
+        }
+
+        .chair7 {
+            --angle: 270deg;
+        }
+
+        .chair8 {
+            --angle: 315deg;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <form>
+        <label for="Name">Enter name</label>
+        <input type="text" id="Name" name="Name">
+        <label for="checkbox">Are you vegetarian</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <label for="Courses">How many courses is this person allowed</label>
+        <input type="number" id="Courses" min="5" max="9">
+        <input type="button" value="Submit" onclick="displayInputAndCheckbox()">
+    </form>
+    <br><br>
+
+</body>
+<script>
+
+
+
+    function displayInputAndCheckbox() {
+        const inputText = document.getElementById("Name").value;
+        const checkbox = document.getElementById("checkbox").checked;
+        const inputCourses = document.getElementById("Courses").value;
+        let displayText = "Name: " + inputText + " vegetarian: " + checkbox + " this person is allowed " + inputCourses + " courses";
+
+
+        const chairs = document.querySelectorAll('display-area');
+
+        const random = Math.floor(Math.random() * chairs.length);
+        document.getElementById("display-area").innerHTML = displayText;
+    }
+</script>
+<div class="table">
+    <li class="circle chair1" id="display-area">
+        Chair1
+    </li>
+    <li class="circle chair2" id="display-area">
+        Chair2
+    </li>
+    <li class="circle chair3" id="display-area">
+        Chair3
+    </li>
+    <li class="circle chair4" id="display-area">
+        Chair4
+    </li>
+    <li class="circle chair5" id="display-area">
+        Chair5
+    </li>
+    <li class="circle chair6" id="display-area">
+        Chair6
+    </li>
+    <li class="circle chair7" id="display-area">
+        Chair7
+    </li>
+    <li class="circle chair8" id="display-area">
+        Chair8
+    </li>
+</div>
+</body>
+
+</html>
+</body>
+
+</html>

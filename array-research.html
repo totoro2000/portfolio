@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Bebas+Neue&family=Cabin:wght@400;600&family=DM+Serif+Display&family=Dosis:wght@200;300&family=Marcellus&family=Oswald:wght@200;400&family=Oxygen:wght@300;400&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500&family=Square+Peg&family=Style+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="statics/style.css">
+    <!--(for icon 16x16px photo) : <link rel="icon" href="favicon.ico" type="image/x-icon"/>-->
+    <title>Sara Rabiei/ Arrays</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="pages">Arrays in JavaScript</h1>
+
+        <p class="note">Arrays store multiple values in a single variable. It stores a fixed-size sequential collection
+            of elements of the same type. An array is used to store a collection of data, but it is often more useful to
+            think of an array as a collection of variables of the same type.
+        <dl>
+            <dd>
+                <h4>Questions</h4>
+            </dd>
+            <dd> What is Arrays?</dd>
+            <dd> How to use them?</dd>
+            <dd>What are arrays properties?</dd>
+            <dd>What are arrays methods?</dd>
+            <p> The Array parameter is a list of strings or integers. When you specify a single numeric parameter with
+                the Array constructor, you specify the initial length of the array. The maximum length allowed for an
+                array is 4,294,967,295.
+
+
+            <h4>Properties:</h4>
+
+            <dd>Constructor: Returns a reference to the array function that created the object.</dd>
+            <dd>
+                Index: The property represents the zero-based index of the match in the string.
+            </dd>
+            <dd>Input: This property is only present in arrays created by regular expression matches.</dd>
+            <dd>Length: Reflects the number of elements in an array.</dd>
+            <dd>Prototype: The prototype property allows you to add properties and methods to an object.</dd>
+
+
+            <dd>
+                <h4>References:</h4>
+            </dd>
+            <dd><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer"
+                    class="assignment-link">MDN</a></dd>
+            <dd><a href="https://www.tutorialspoint.com" target="_blank" rel="noopener noreferrer"
+                    class="assignment-link">Tuturials point</a></dd>
+            <dd><a href="https://javascript.info" target="_blank" rel="noopener noreferrer"
+                    class="assignment-link">JavaScript</a></dd>
+        </dl>
+
+        </p>
+
+
+
+
+
+        <div class="description-2">
+            <h4>Methods:</h4>
+            <dd>Arrays provide a lot of methods. To make things easier, in this chapter they are split into groups.</dd>
+            <dd>Array push(…items): adds items to the end.</dd>
+            <dd>- Syntax: array.push(element1, …, element);</dd>
+            <dd>- element1, …, element: The elements to add to the end of the array.</dd>
+            <dd>Array pop(): extracts an item from the end.</dd>
+            <dd>- Syntax: arrays.pop();</dd>
+            <dd>Array shift(): extracts an item from the beginning.</dd>
+            <dd>- Syntax: array.shift();</dd>
+            <dd>Array filter() - Javascript array filter() method creates a new array with all elements that pass the
+                test implemented by the provided function.</dd>
+            <dd>- Syntax: array.filter(callback[, thisObject]);</dd>
+            <dd>- Callback: function to test each element of the array.</dd>
+            <dd>- thisObject: object to use as this when executing callback.
+            </dd>
+            <dd>Array forEach() - Javascript array forEach() method calls a function for each element in the array.
+            </dd>
+            <dd>- Syntax: array.forEach(callback[, thisObject]);</dd>
+            <dd>- Callback: function to test each element of the array.</dd>
+            <dd>- thisObject: object to use as this when executing callback.</dd>
+            <dd>Array map() - Javascript array map() method creates a new array with the results of calling a provided
+                function on every element in this array</dd>
+            <dd>- Syntax: array.map(callback[, thisObject]);</dd>
+            <dd>- callback − Function that produces an element of the new Array from an element of the current one.</dd>
+            <dd>- thisObject − Object to use as this when executing callback.</dd>
+            <dd>Array reduce(): Javascript array reduce() method applies a function simultaneously against two values of
+                the array (from left-to-right) as to reduce it to a single value.</dd>
+            <dd>- Syntax: array.reduce( callback[, initialValue]); </dd>
+            <dd>- Callback – function to execute on each value in the array.</dd>
+            <dd>- initialValue – Object to use as the first argument to the first call of the callback.</dd>
+            <dd>Array toString() Method: Javascript array toString() method returns a string representing the source
+                code of the specified array and its elements.</dd>
+            <dd>- Syntax: array.toString(); </dd>
+            <dd>
+                <h3> My Examples:</h3>
+            </dd>
+            <dd>
+                <h4>Create an array:</h4>
+            </dd>
+            <dd>let cars = ["a", "b", "c"];</dd>
+            <dd>console.log(cars); => By adding the console.log we can run our code and see the results in console of
+                browser.</dd>
+
+            <dd>
+                <h4>Here I add another car to my array by using push:</h4>
+            </dd>
+            <dd>cars.push("d");</dd>
+            <dd>And now we want to remove an array from our list:</dd>
+            <dd>cars.pop("b");</dd>
+            <dd>I used the sort method to sort the elements alpabetically or numerically.</dd>
+            <dd>let fruits = ['apple', 'grape', 'banana'];</dd>
+            <dd>fruits = fruits.sort();</dd>
+            <dd>By using the console.log you can see that the fruits are being sorted alphabetically like this:['apple',
+                'banana', 'grape']</dd>
+            <dd>and we can reverse it by using fruits.reverse instead of fuits.sort.</dd>
+
+
+            <dd>
+                <h4>Finding the sum of numers in an array:</h4>
+            </dd>
+            <dd>const numbers = [2, 7, 3, 8];</dd>
+            <dd>const result = numbers.reduce((prev, number) => {</dd>
+            <dd>return prev + number;
+                }, 0);</dd>
+
+            <dd>By adding the console.log(result); we got the sum of the numbers , 20, in the console page.</dd>
+            <dd>
+                <h4>Find the sum of all materials required to build a house:</h4>
+            </dd>
+            <dd>const materials = [</dd>
+            <dd>{ name :"Brick"
+                cost: 3000},
+            </dd>
+            <dd>{ name: "Plaster", cost: 2400},</dd>
+            <dd>{ name: "wood", cost: 5000}</dd>
+            <dd>];</dd>
+            <dd><em>This time I am going to sum the objects.</em></dd>
+            <dd>const result = materials.reduce((prev, material) =>{</dd>
+            <dd>return prev + material.cost;</dd>
+            <dd>}, 0);</dd>
+            <dd>By adding the console.log(result); we should see the number of 104000 in the console part.</dd>
+            <dd>
+                <h4>Converting a two dimentional array of key-value pairs into an object</h4>
+            </dd>
+            <dd>const keyValuePairs = [</dd>
+            <dd>["username", "dcode"],</dd>
+            <dd>["memberSince", "10th of May"],</dd>
+            <dd>["age", 35]</dd>
+            <dd>];</dd>
+            <dd> const result = keyValuePairs.reduce((prev, keyValuePairs) => {</dd>
+            <dd>const key = keyValuePairs[0];</dd>
+            <dd>const value = keyValuePairs[1];</dd>
+            <dd>prev[key] = value;</dd>
+            <dd>return prev;</dd>
+            <dd>}, {});</dd>
+
+            <dd>By adding console.log I get an object of key value pairs.</dd>
+            <dd> In the next example I used array reduce to find the highest salary.</dd>
+            <dd>
+                <h4>Find the max or min salary of a list of people objects:</h4>
+            </dd>
+            <dd>const people = [</dd>
+            <dd>{name: "Don", occupation: "Software Developer", salary : 90000},</dd>
+            <dd>{name: "Max", occupation: "Mechanic", salary: 150000},</dd>
+            <dd>{name: "Beth", occupation: "Teacher", salary: 75000}</dd>
+            <dd>];</dd>
+            <dd>const result = people.redube((prev, person)=>{</dd>
+            <dd>if (person.salary > prev) {</dd>
+            <dd>return person.salary;}</dd>
+
+            return prev;
+            <dd>}, 0);</dd>
+            <dd>By running the code we see the 150000 in the console which belongs to Max.</dd>
+            </p>
+
+
+
+        </div>
+    </main>
+
+
+</body>
+
+</html>
